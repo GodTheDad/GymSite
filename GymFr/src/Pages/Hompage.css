@@ -1,0 +1,42 @@
+#cardSection{
+    background-color: rgb(10, 10, 10);
+    height: 650px;
+
+    
+}
+
+#Offers{
+    background-color: rgb(25, 25, 25);
+    height: 800px;
+}
+.coolText{
+    text-align: center;
+    height: 100px;
+    padding-top: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* .divodiv{
+
+} */
+
+.longcards{
+    height: 350px;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+}
+.coolh1{
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 10px;
+}
+
+h3{
+    color: rgb(253,112,37);
+    font-size: 15px;
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Maven Pro', sans-serif;
+}

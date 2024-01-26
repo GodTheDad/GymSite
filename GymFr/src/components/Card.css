@@ -1,0 +1,70 @@
+.fontlink{
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+.Card {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid rgb(237, 151, 38);; */
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: .6s;
+    color: rgb(253,112,37);
+    background-color: rgb(25, 25, 25);
+    /* padding: 400px; */
+}
+.Card:hover {
+    transition: .6s;
+    width: 320px;
+    height: 320px;
+    background-color: rgb(253,112,37);
+    border-radius: 10px;
+    color: white
+} 
+.Card h1{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: 0px;
+
+}
+.Card:hover #dissapimage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s;
+    display: none;
+}
+.Card:hover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s;
+    transform: translate(-50%, -200%); 
+}
+#dissapimage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    display: block;
+    transition: .5s;
+}
+img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    height: 60px;
+    width: 60px;
+    transition: .5s;
+}
+
+
