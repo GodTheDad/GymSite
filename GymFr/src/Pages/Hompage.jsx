@@ -2,6 +2,7 @@ import React from 'react'
 import Navigation from '../components/Navigation'
 import CardList from '../components/CardList'
 import "./Hompage.css"
+import ClassCard from '../components/ClassCard'
 const Hompage = () => {
   return (
     <>
@@ -22,6 +23,9 @@ const Hompage = () => {
           <div className='coolText'>
             <h3>What We Offer</h3>
             <h1 className='coolh1'>All the programs you need</h1>
+          </div>
+          <div>
+            <ClassCard image="" Name = '' desc = ""></ClassCard>
           </div>
       </section>
     </>

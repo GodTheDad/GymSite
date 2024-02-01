@@ -1,0 +1,28 @@
+
+
+.MainCard{
+    width: 350px;
+    height: 300px;
+}
+#cardimg{
+    width: 350px;
+    height: 200px;
+}
+h1{
+    color: white;
+    margin: 0px;
+}
+.textbox{
+    width: 350px;
+    height: 100px;
+    background-color: black;
+    text-align: center;
+}
+.slant{
+    height:0px;
+    width: 0px;
+    border-right: 350px solid transparent;
+    border-bottom: 13.9px solid black;
+    margin-top: -13.9px;
+}
+
