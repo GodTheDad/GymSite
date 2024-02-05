@@ -39,7 +39,9 @@
     top: 50%;
     left: 50%;
     transition: .5s;
-    display: none;
+    transform: translate(-50%, -200%); 
+    /* visibility: hidden; */
+    opacity: 0%;
 }
 .Card:hover .cardimg {
     position: absolute;
@@ -56,6 +58,8 @@
     height: 60px;
     width: 60px;
     transition: .5s;
+    /* visibility: visible; */
+    opacity: 100%;
 }
 .cardimg{
     position: absolute;
@@ -67,4 +71,23 @@
     transition: .5s;
 }
 
+#CardDesc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 0%;
+    transition: .5s;
+}
+
+.Card:hover #CardDesc{
+    visibility:visible;
+    color: rgb(255, 255, 255);
+    opacity: 100%;
+    transition: .5s;
+}
 

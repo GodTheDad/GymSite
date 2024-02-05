@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation'
 import CardList from '../components/CardList'
 import "./Hompage.css"
 import ClassCard from '../components/ClassCard'
+import ClassList from '../components/ClassList'
 const Hompage = () => {
   return (
     <>
@@ -25,7 +26,7 @@ const Hompage = () => {
             <h1 className='coolh1'>All the programs you need</h1>
           </div>
           <div>
-            <ClassCard image="" Name = '' desc = ""></ClassCard>
+            <ClassList></ClassList>
           </div>
       </section>
     </>
