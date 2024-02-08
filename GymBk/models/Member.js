@@ -6,6 +6,7 @@ const MemberSchema = mongoose.Schema({
     MemberEmail:String,
     MemberPass:String,
     MemberSub: Boolean,
+    MemberId: String,
 });
 
 

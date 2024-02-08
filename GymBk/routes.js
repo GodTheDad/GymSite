@@ -12,12 +12,31 @@ router.get("/members", async (req, res) => {
 	const members = await Member.find()
 	res.send(members)
 })
+router.get("/members/:id", async (req, res) => {
+    const id = req.params.id;
+	const members = await Member.find({MemberName: id})
+	res.send(members)
+})
+router.post("/members/:id/delete", async (req, res) => {
+	const id = req.params.id;
+	await Member.deleteMany({ MemberName: id })
+    res.send({
+		message: "Deletion Completion"
+	})
+})
+// router.post("/members/deleteall", async (req, res) => {
+// 	const id = req.params.id;
+// 	const query = await Member.find();
+// 	await Member.deleteMany()
+//     res.send({
+// 		message: "Deletion Completion"
+// 	})
+// })
 
-router.post("/members/update", async(req,res) =>{
-    let newPass;
+router.post("/members/create", async(req,res) =>{
+    let newPass ;
     bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
-       newPass = String(hash)  
-       
+       return(hash)
     });
     const newMember = {
 		MemberName: req.body.name,
