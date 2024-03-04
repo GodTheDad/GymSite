@@ -13,7 +13,7 @@ const Navigation = () => {
             <Link to = {`/about`}><li>Contact Us</li></Link>
             <Link to = {`/about`}><li>Socials</li></Link>
             </ul>
-            <button type="button">Sign Up</button>
+            <Link to = {`/signup`}><button type="button">Sign Up</button></Link>
         </nav>
     </div>
   )

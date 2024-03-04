@@ -5,6 +5,7 @@ import {Routes, Route } from "react-router-dom";
 import Hompage from './Pages/Hompage';
 import './App.css'
 import Adminpage from './Pages/Adminpage';
+import Signup from './Pages/Signup';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Hompage/>} />
         <Route path="/admin" element={<Adminpage/>} />
+        <Route path="/signup" element={<Signup/>} />
         {/* <Route path ="/about" element={<AboutPage/>} /> */}
       </Routes>
     </>
